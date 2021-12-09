@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Tip Calculator</h1>
+      <section>
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <input type="number" placeholder="Your bill" id="bill" />
+        </div>
+        <div>
+          <div class="space">
+            <label for="Percentage">The Tip Percentage </label>
+            <span id="Percentage">0%</span>
+          </div>
+          <input
+            class="range"
+            type="range"
+            value="0"
+            id="Percentage-value"
+            min="0"
+            max="100"
+          />
+        </div>
+        <div class="space">
+          <span>Tip</span>
+          <span id="tip-value"></span>
+        </div>
+        <hr />
+        <div class="space">
+          <span class="total">Total</span>
+          <span id="total-value"></span>
+        </div>
+      </section>
+      <section>
+        <div class="space">
+          <span for="number-of-persones">Split</span>
+          <span id="split-value"></span>
+        </div>
+        <input
+          class="range"
+          type="range"
+          value="0"
+          id="number-of-persones"
+          min="1"
+          max="20"
+        />
+        <div class="space">
+          <span>Bill each</span>
+          <span id="Bill each"></span>
+        </div>
+        <div class="space">
+          <span>Tip each</span>
+          <span id="Tip each"></span>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
